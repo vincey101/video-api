@@ -15,7 +15,7 @@ router.post('/api/save-video', async (req, res) => {
     console.log(req.body);
 
     // Return a valid JSON response
-    // res.json({ videoUrl: 'http://localhost:5173/4d96a48f-c80d-43dd-9319-968d019856b4' });<cl></cl>
+    res.json({ videoUrl: 'https://vincent-videoeditor.netlify.app/4d96a48f-c80d-43dd-9319-968d019856b4' });
 
     if (!videoUrl) {
         return res.status(400).send('Video URL is required');
